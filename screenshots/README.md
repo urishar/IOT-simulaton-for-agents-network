@@ -1,9 +1,8 @@
 # Screenshots
 
-Place screenshots of the web visualization in this folder.
+"C:\Users\urish\OneDrive - post.bgu.ac.il\Pictures\Screenshots\Screenshot 2026-04-30 182531.png"
+"C:\Users\urish\OneDrive - post.bgu.ac.il\Pictures\Screenshots\Screenshot 2026-04-30 182644.png"
+"C:\Users\urish\OneDrive - post.bgu.ac.il\Pictures\Screenshots\Screenshot 2026-04-30 182621.png"
 
-Example files:
 
-- `network-view.png`
-- `sync-run.png`
-- `async-lamport-clock.png`
+
