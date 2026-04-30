@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>IoT Network Simulation Demo</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">IoT Exercise Visualization</p>
+        <h1>Sync vs Async Message Passing</h1>
+      </div>
+      <form id="controls" class="controls">
+        <label>
+          Agents
+          <input id="agents" type="number" min="4" max="14" value="8" />
+        </label>
+        <label>
+          Edge probability
+          <input id="probability" type="range" min="0" max="1" step="0.05" value="0.28" />
+          <span id="probabilityText">0.28</span>
+        </label>
+        <label>
+          Seed
+          <input id="seed" type="number" min="1" max="99999" value="7" />
+        </label>
+        <button type="submit">Generate</button>
+      </form>
+    </header>
+
+    <main class="layout">
+      <section class="stage">
+        <div class="panel-title">
+          <div>
+            <h2>Network</h2>
+            <p>Nodes are agents. Lines are communication links.</p>
+          </div>
+          <div class="mode-tabs" role="tablist">
+            <button id="syncTab" class="active" type="button">Synchronous</button>
+            <button id="asyncTab" type="button">Asynchronous</button>
+          </div>
+        </div>
+        <svg id="network" viewBox="0 0 840 520" aria-label="network graph"></svg>
+        <div class="playbar">
+          <button id="play" type="button">Play</button>
+          <input id="step" type="range" min="0" max="0" value="0" />
+          <span id="eventLabel">Ready</span>
+        </div>
+      </section>
+
+      <aside class="side">
+        <section class="card metrics">
+          <h2>Comparison</h2>
+          <div id="metricsGrid" class="metric-grid"></div>
+        </section>
+
+        <section class="card">
+          <h2>Lamport clocks</h2>
+          <p class="hint">Async receivers use max(local, message) + 1.</p>
+          <div id="lamportPanel" class="clock-list"></div>
+        </section>
+
+        <section class="card">
+          <h2>Update tables</h2>
+          <div id="tables" class="tables"></div>
+        </section>
+      </aside>
+
+      <section class="timeline card">
+        <div class="panel-title compact">
+          <div>
+            <h2>Event timeline</h2>
+            <p>Messages that improve a table are highlighted.</p>
+          </div>
+        </div>
+        <div id="timeline"></div>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
