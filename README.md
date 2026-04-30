@@ -1,6 +1,6 @@
 # IoT Network Simulation Visualization
 
-A small web visualization project for an IoT exercise about distributed agents.
+A web visualization project for an IoT exercise about distributed agents.
 The app shows how information spreads through a random network using both
 synchronous and asynchronous message passing.
 
