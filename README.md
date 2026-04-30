@@ -44,6 +44,9 @@ No database, Docker, Node.js, or frontend framework is required.
 │   ├── styles.css
 │   └── app.js
 ├── screenshots/
+│   ├── sync-view.png
+│   ├── async-view.png.png
+│   ├── event timeline.png
 │   └── README.md
 ├── .gitignore
 └── README.md
@@ -54,8 +57,8 @@ No database, Docker, Node.js, or frontend framework is required.
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
-cd YOUR_REPOSITORY_NAME
+git clone https://github.com/urishar/IOT-simulaton-for-agents-network.git
+cd IOT-simulaton-for-agents-network
 ```
 
 Run the web app:
@@ -89,13 +92,20 @@ python main.py
 
 ## Screenshots
 
-Screenshots can be added later inside the `screenshots/` folder.
+The screenshots are stored in the `screenshots/` folder and displayed here so
+they are visible from the main GitHub repository page.
 
-Example README image reference:
+### Synchronous view
 
-```md
-![App screenshot](screenshots/demo.png)
-```
+![Synchronous view](screenshots/sync-view.png)
+
+### Asynchronous view
+
+![Asynchronous view](screenshots/async-view.png.png)
+
+### Event timeline
+
+![Event timeline](screenshots/event%20timeline.png)
 
 ## Future Improvements
 
